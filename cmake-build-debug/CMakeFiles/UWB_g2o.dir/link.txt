@@ -1,0 +1,3 @@
+"D:\mytools\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\UWB_g2o.dir/objects.a
+D:\mytools\VSvode\mingw64\bin\ar.exe cr CMakeFiles\UWB_g2o.dir/objects.a @CMakeFiles\UWB_g2o.dir\objects1.rsp
+D:\mytools\VSvode\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\UWB_g2o.dir/objects.a -Wl,--no-whole-archive -o UWB_g2o.exe -Wl,--out-implib,libUWB_g2o.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\UWB_g2o.dir\linklibs.rsp
