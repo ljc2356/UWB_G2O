@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/usr/local/include/eigen3 -I/usr/local/include/glog
 
-CXX_FLAGS = -g -std=gnu++14
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14
 

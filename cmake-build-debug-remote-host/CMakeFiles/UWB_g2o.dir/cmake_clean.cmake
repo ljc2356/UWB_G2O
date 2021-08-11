@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/UWB_g2o.dir/main.cpp.o"
+  "CMakeFiles/UWB_g2o.dir/modules/LocMoveBinaryEdge.cpp.o"
   "CMakeFiles/UWB_g2o.dir/modules/LocUnaryEdge.cpp.o"
   "CMakeFiles/UWB_g2o.dir/modules/LocVertex.cpp.o"
   "CMakeFiles/UWB_g2o.dir/modules/MpcBinaryEdge.cpp.o"

@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UWB_g2o.dir/build.make CMakeFiles/UWB_g2o.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+modules/LocMoveBinaryEdge.o: modules/LocMoveBinaryEdge.cpp.o
+.PHONY : modules/LocMoveBinaryEdge.o
+
+# target to build an object file
+modules/LocMoveBinaryEdge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UWB_g2o.dir/build.make CMakeFiles/UWB_g2o.dir/modules/LocMoveBinaryEdge.cpp.o
+.PHONY : modules/LocMoveBinaryEdge.cpp.o
+
+modules/LocMoveBinaryEdge.i: modules/LocMoveBinaryEdge.cpp.i
+.PHONY : modules/LocMoveBinaryEdge.i
+
+# target to preprocess a source file
+modules/LocMoveBinaryEdge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UWB_g2o.dir/build.make CMakeFiles/UWB_g2o.dir/modules/LocMoveBinaryEdge.cpp.i
+.PHONY : modules/LocMoveBinaryEdge.cpp.i
+
+modules/LocMoveBinaryEdge.s: modules/LocMoveBinaryEdge.cpp.s
+.PHONY : modules/LocMoveBinaryEdge.s
+
+# target to generate assembly for a file
+modules/LocMoveBinaryEdge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UWB_g2o.dir/build.make CMakeFiles/UWB_g2o.dir/modules/LocMoveBinaryEdge.cpp.s
+.PHONY : modules/LocMoveBinaryEdge.cpp.s
+
 modules/LocUnaryEdge.o: modules/LocUnaryEdge.cpp.o
 .PHONY : modules/LocUnaryEdge.o
 
@@ -309,6 +333,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... modules/LocMoveBinaryEdge.o"
+	@echo "... modules/LocMoveBinaryEdge.i"
+	@echo "... modules/LocMoveBinaryEdge.s"
 	@echo "... modules/LocUnaryEdge.o"
 	@echo "... modules/LocUnaryEdge.i"
 	@echo "... modules/LocUnaryEdge.s"

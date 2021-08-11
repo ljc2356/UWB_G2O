@@ -5,6 +5,7 @@
 #include "modules/MpcVertex.h"
 #include "modules/LocUnaryEdge.h"
 #include "modules/MpcBinaryEdge.h"
+#include "modules/LocMoveBinaryEdge.h"
 #include "Eigen/Dense"
 #include "g2o//core/block_solver.h"
 #include "g2o/core/optimization_algorithm_levenberg.h"
@@ -22,6 +23,8 @@ int main() {
     double sigma = 0.5;
     double los_sigma = 0.8;
     double mpc_sigma = 0.3;
+    double move_sigma = 0.1;
+
 
 /* 开始定义图模型 */
     typedef g2o::BlockSolverX Block;
@@ -38,7 +41,7 @@ int main() {
     for(int i = 0;i<numDatas;i++)
     {
         LocVerLists[i] = new LocVertex();
-        LocVerLists[i]->setEstimate(Eigen::Vector2d(result(i,0)*cos(result(i,1)),result(i,0)*sin(result(i,1))));
+        LocVerLists[i]->setEstimate(Eigen::Vector4d(result(i,0)*cos(result(i,1)),result(i,0)*sin(result(i,1)),0,0));
         LocVerLists[i]->setId(i);
         optimizer.addVertex(LocVerLists[i]);
     }
@@ -77,6 +80,21 @@ int main() {
         MpcEdgeLists[i]->setInformation(Eigen::Matrix<double,2,2>::Identity()*1/(mpc_sigma *mpc_sigma));
         optimizer.addEdge(MpcEdgeLists[i]);
     }
+/* 添加姿态观测二元边 */
+    LocMoveBinaryEdge* LocMoveEdgesLists[numDatas - 1];
+    for(int i = 0;i<(numDatas-1);i++)
+    {
+        int IDIndex = i + 2* numDatas;
+        LocMoveEdgesLists[i] = new LocMoveBinaryEdge();
+        LocMoveEdgesLists[i]->setId(IDIndex);
+        LocMoveEdgesLists[i]->setVertex(0,LocVerLists[i]);
+        LocMoveEdgesLists[i]->setVertex(1,LocVerLists[i+1]);
+        LocMoveEdgesLists[i]->setMeasurement(Eigen::Vector4d::Zero());
+        LocMoveEdgesLists[i]->setInformation(Eigen::Matrix<double,4,4>::Identity() * 1/(move_sigma * move_sigma));
+        optimizer.addEdge(LocMoveEdgesLists[i]);
+    }
+
+
 
 /* 执行优化 */
     optimizer.initializeOptimization();
@@ -90,7 +108,7 @@ int main() {
         afterResult.row(i) = LocVerLists[i]->estimate();
     }
 
-    MatToCSV(afterResult, "mat.csv");
+    MatToCSV(afterResult, "move_02.csv");
     return 0;
 
 }

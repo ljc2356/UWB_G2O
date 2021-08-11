@@ -89,6 +89,12 @@
 		<Unit filename="/home/MyProject/UWB_g2o/main.cpp">
 			<Option target="UWB_g2o"/>
 		</Unit>
+		<Unit filename="/home/MyProject/UWB_g2o/modules/LocMoveBinaryEdge.cpp">
+			<Option target="UWB_g2o"/>
+		</Unit>
+		<Unit filename="/home/MyProject/UWB_g2o/modules/LocMoveBinaryEdge.h">
+			<Option target="UWB_g2o"/>
+		</Unit>
 		<Unit filename="/home/MyProject/UWB_g2o/modules/LocUnaryEdge.cpp">
 			<Option target="UWB_g2o"/>
 		</Unit>

@@ -10,6 +10,10 @@
 #include "iostream"
 #include "fstream"
 
+using namespace std;
+
+
+
 double wrapToPi(double angle);
 
 Eigen::Vector2d mirror(double x,double y,double h,double theta);

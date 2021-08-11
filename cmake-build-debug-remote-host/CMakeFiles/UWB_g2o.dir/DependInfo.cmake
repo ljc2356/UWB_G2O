@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/MyProject/UWB_g2o/main.cpp" "/home/MyProject/UWB_g2o/cmake-build-debug-remote-host/CMakeFiles/UWB_g2o.dir/main.cpp.o"
+  "/home/MyProject/UWB_g2o/modules/LocMoveBinaryEdge.cpp" "/home/MyProject/UWB_g2o/cmake-build-debug-remote-host/CMakeFiles/UWB_g2o.dir/modules/LocMoveBinaryEdge.cpp.o"
   "/home/MyProject/UWB_g2o/modules/LocUnaryEdge.cpp" "/home/MyProject/UWB_g2o/cmake-build-debug-remote-host/CMakeFiles/UWB_g2o.dir/modules/LocUnaryEdge.cpp.o"
   "/home/MyProject/UWB_g2o/modules/LocVertex.cpp" "/home/MyProject/UWB_g2o/cmake-build-debug-remote-host/CMakeFiles/UWB_g2o.dir/modules/LocVertex.cpp.o"
   "/home/MyProject/UWB_g2o/modules/MpcBinaryEdge.cpp" "/home/MyProject/UWB_g2o/cmake-build-debug-remote-host/CMakeFiles/UWB_g2o.dir/modules/MpcBinaryEdge.cpp.o"

@@ -10,7 +10,7 @@
 #include "g2o/core/base_vertex.h"
 #include <iostream>
 
-class LocVertex: public  g2o::BaseVertex<2,Eigen::Vector2d>{
+class LocVertex: public  g2o::BaseVertex<4,Eigen::Vector4d>{
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
     void setToOriginImpl();

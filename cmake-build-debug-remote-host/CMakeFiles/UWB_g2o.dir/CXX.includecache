@@ -21,6 +21,8 @@ modules/LocUnaryEdge.h
 /home/MyProject/UWB_g2o/modules/LocUnaryEdge.h
 modules/MpcBinaryEdge.h
 /home/MyProject/UWB_g2o/modules/MpcBinaryEdge.h
+modules/LocMoveBinaryEdge.h
+/home/MyProject/UWB_g2o/modules/LocMoveBinaryEdge.h
 Eigen/Dense
 /home/MyProject/UWB_g2o/Eigen/Dense
 g2o/core/block_solver.h
@@ -33,6 +35,20 @@ g2o/core/optimization_algorithm_dogleg.h
 /home/MyProject/UWB_g2o/g2o/core/optimization_algorithm_dogleg.h
 g2o/solvers/dense/linear_solver_dense.h
 /home/MyProject/UWB_g2o/g2o/solvers/dense/linear_solver_dense.h
+
+/home/MyProject/UWB_g2o/modules/LocMoveBinaryEdge.h
+Eigen/Core
+/home/MyProject/UWB_g2o/modules/Eigen/Core
+g2o/core/base_binary_edge.h
+/home/MyProject/UWB_g2o/modules/g2o/core/base_binary_edge.h
+LocVertex.h
+/home/MyProject/UWB_g2o/modules/LocVertex.h
+MpcVertex.h
+/home/MyProject/UWB_g2o/modules/MpcVertex.h
+../tools/UWBtools.h
+/home/MyProject/UWB_g2o/tools/UWBtools.h
+math.h
+/home/MyProject/UWB_g2o/modules/math.h
 
 /home/MyProject/UWB_g2o/modules/LocUnaryEdge.h
 Eigen/Core

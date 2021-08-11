@@ -7,11 +7,11 @@
 
 
 void LocVertex::setToOriginImpl() {
-    _estimate << 0,0;
+    _estimate << 0,0,0,0;
 }
 
 void LocVertex::oplusImpl(const double * v) {
-    _estimate += Eigen::Vector2d(v);
+    _estimate += Eigen::Vector4d(v);
 }
 
 bool LocVertex::read(std::istream &in) {
