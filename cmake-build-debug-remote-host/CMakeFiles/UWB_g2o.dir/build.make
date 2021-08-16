@@ -195,6 +195,7 @@ UWB_g2o: CMakeFiles/UWB_g2o.dir/modules/LocMoveBinaryEdge.cpp.o
 UWB_g2o: CMakeFiles/UWB_g2o.dir/build.make
 UWB_g2o: /usr/local/lib/libg2o_stuff.so
 UWB_g2o: /usr/local/lib/libg2o_core.so
+UWB_g2o: /usr/lib/x86_64-linux-gnu/libcxsparse.so
 UWB_g2o: CMakeFiles/UWB_g2o.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/MyProject/UWB_g2o/cmake-build-debug-remote-host/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable UWB_g2o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/UWB_g2o.dir/link.txt --verbose=$(VERBOSE)

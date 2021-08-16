@@ -46,6 +46,7 @@
 				<Compiler>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/glog"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -70,6 +71,7 @@
 				<Compiler>
 					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/glog"/>
+					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -136,6 +138,9 @@
 		</Unit>
 		<Unit filename="/home/MyProject/UWB_g2o/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/MyProject/UWB_g2o/cmake_modules/FindCSparse.cmake">
+			<Option virtualFolder="CMake Files\cmake_modules\"/>
 		</Unit>
 		<Unit filename="/home/MyProject/UWB_g2o/cmake_modules/FindG2O.cmake">
 			<Option virtualFolder="CMake Files\cmake_modules\"/>

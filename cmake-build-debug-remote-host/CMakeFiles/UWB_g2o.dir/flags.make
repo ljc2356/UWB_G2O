@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/eigen3 -I/usr/local/include/glog
+CXX_INCLUDES = -I/usr/local/include/eigen3 -I/usr/local/include/glog -I/usr/include/suitesparse
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14
 

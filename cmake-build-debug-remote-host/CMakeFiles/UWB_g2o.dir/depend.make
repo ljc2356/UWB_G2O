@@ -10,6 +10,8 @@ CMakeFiles/UWB_g2o.dir/main.cpp.o: \
  ../modules/MpcVertex.h \
  ../tools/UWBtools.h \
  ../tools/load_cdv.h \
+ /usr/include/suitesparse/SuiteSparse_config.h \
+ /usr/include/suitesparse/cs.h \
  /usr/local/include/eigen3/Eigen/Cholesky \
  /usr/local/include/eigen3/Eigen/Core \
  /usr/local/include/eigen3/Eigen/Dense \

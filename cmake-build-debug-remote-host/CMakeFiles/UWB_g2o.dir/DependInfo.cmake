@@ -23,6 +23,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include/eigen3"
   "/usr/local/include/glog"
+  "/usr/include/suitesparse"
   )
 
 # The set of dependency files which are needed:
